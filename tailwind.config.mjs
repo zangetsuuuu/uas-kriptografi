@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        custom: "url('./src/assets/images/background.webp')",
+        custom: "url('/background.webp')",
       },
       fontFamily: {
         duplet: ['Duplet', ...defaultTheme.fontFamily.sans],
