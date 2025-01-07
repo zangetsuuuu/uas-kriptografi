@@ -1,0 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import qrcode from '@assets/images/qrcode.svg';
+---
+
+<div class="size-24 rounded-lg overflow-hidden">
+  <Image src={qrcode} alt="QrCode" loading="eager" class="object-cover w-full h-full" />
+</div>

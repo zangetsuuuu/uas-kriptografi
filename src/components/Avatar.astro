@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import avatar from '@assets/images/avatar.webp';
+---
+
+<div class="size-28 mx-auto">
+  <Image
+    src={avatar}
+    alt="Avatar"
+    loading="eager"
+    class="object-cover w-full h-full rounded-xl shadow-md"
+    draggable="false"
+  />
+</div>

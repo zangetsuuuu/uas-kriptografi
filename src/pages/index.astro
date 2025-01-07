@@ -1,0 +1,14 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Banner from '@components/Banner.astro';
+import Profile from '@components/Profile.astro';
+
+const { href } = Astro.url;
+const title = 'UAS Kriptografi';
+const description = 'Rafif Isdarufa Athallah (312210299)';
+---
+
+<Layout title={title} description={description} url={href}>
+  <Banner />
+	<Profile />
+</Layout>

@@ -1,0 +1,35 @@
+---
+import '@assets/styles/fonts.css';
+
+const { title, description, url } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <main
+      class="min-h-svh md:min-h-screen flex items-center bg-custom bg-no-repeat bg-cover font-duplet"
+    >
+      <div class="container max-w-screen-sm mx-auto tracking-wide p-4 md:p-6">
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>
